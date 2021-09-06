@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NavigationDrawing</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="item2k">ITEM 2K</string>
+    <string name="item4k">ITEM 4K</string>
+    <string name="item8k">ITEM 8K</string>
+    <string name="item10k">ITEM 10K</string>
+
+</resources>

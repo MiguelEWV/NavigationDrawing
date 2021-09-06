@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:id="@+id/drawerKotlin"><!-- OJO
+    Acresento deste valor que es llamado dentro de
+    la classe "MainActivit2"
+     -->
+
+<!-- todo>>+++++++++++++ VIDEO KOTLIN ++++++++++++++++++++++  -->
+    <!--Este contenedor de fragment es
+    -->
+ <!--   -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedor_de_fragment_kotlin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.miguelewv.navigationdrawing.fragment8k"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/visual_de_navegacion_kotlin"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/cabecera_drawel"
+        app:menu="@menu/menudrawing"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

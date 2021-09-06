@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Para crear este menu es preciso dar click derecho en la carpeta res y despues en
+    New + Android Resource File + resource Type cambiar por menu.
+    -->
+
+
+    <item
+        android:id="@+id/k2"
+        android:icon="@drawable/ic_baseline_2k_24"
+        android:title="Resolucion 2K"/>
+    <item
+        android:id="@+id/k4"
+        android:icon="@drawable/ic_baseline_4k_24"
+        android:title="Resolucion 4K"/>
+    <item
+        android:id="@+id/k8"
+        android:icon="@drawable/ic_baseline_8k_24"
+        android:title="Resolucion 8K"/>
+    <item
+        android:id="@+id/k10"
+        android:icon="@drawable/ic_baseline_10k_24"
+        android:title="Resolucion 10K"/>
+    <item
+        android:id="@+id/g4"
+        android:icon="@drawable/ic_baseline_4g_mobiledata_24"
+        android:title="Conexion 4G"/>
+
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/Layout_Principal_activity_main"><!-- OJO
+    Acresento deste valor que es llamado dentro de
+    la classe "MainActivity"  1-VIDEO JAVA
+    todo>>
+     Recordar si voy a usar la clase de java Main o la Kotlin
+      en las opciones de ++ tools:contex=".MainActivity" ++ -->
+
+
+<!-- todo>>      1-VIDEO JAVA
+    Advertencia el androidx.constraintlayout.widget.ConsntraintLayout
+    cambia su nombre por "androidx.drawerlayout.widget.Drawerlayout"
+    IMPOSIBILITANDO EL USO DE OBJETOS DENTRO DE LA ACTIVIDAD
+    PRINCIPAL , LOS OBJETOS DEVEN SER COLOCADOS DENTRO
+    DEL LAYOUT " contenido_principal " O EN UN FRAME
+-->
+<!-- todo>>       1-VIDEO JAVA
+    Agregando el layout de la barra superior DESNECESARIO SI NO
+    SE CREA EL LAYOUT DE LA TOOLBAR SUPERIOR
+-->
+<!-- todo>>      1-VIDEO JAVA -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/barra_superior"
+        />
+
+    <!--Agregando el layout de el contenido principal OBLIGATORIO-->
+<!-- todo>>      1-VIDEO JAVA-->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/contenido_principal"
+        />
+
+<!-- todo>>      1- VIDEO JAVA
+    Agregando el Container/NavigationView
+    * Dentro del container esta o layout de menu menudrawing
+    * Dentro de container esta tambien el headerLayout
+    "cabecera_drawel"
+    * La opcion de layoutGravity es para alinear
+    el menu para la izquierda ocultando el mismo
+    * la opcion de gravity puede ser cambiada para salir el menu
+    desde otro canto de pantalla
+    " start - desde izquierda "
+    " end - desde derecha "
+    * La opcion de altura o ancho puede ser modificada para
+    alteracion del tamano del menu el "layout_width y layout_height"
+-->
+<!-- todo>>   1-VIDEO JAVA -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/vistaDeNavegacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menudrawing"
+        app:headerLayout="@layout/cabecera_drawel"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
