@@ -5,8 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
-    android:id="@+id/drawerKotlin"><!-- OJO
+
+    tools:openDrawer="start"
+    android:id="@+id/layout_principal_activity_main2"
+    ><!-- OJO
     Acresento deste valor que es llamado dentro de
     la classe "MainActivit2"
      -->
@@ -16,18 +18,18 @@
     -->
  <!--   -->
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/contenedor_de_fragment_kotlin"
+        android:id="@+id/contenedor_de_fragment_layout_activity_main2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.miguelewv.navigationdrawing.fragment8k"/>
+        android:name="com.miguelewv.navigationdrawing.fragment2k"/>
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/visual_de_navegacion_kotlin"
+        android:id="@+id/vistadenavegacion_layout_activity_main2"
         android:fitsSystemWindows="true"
         android:layout_gravity="start"
-        app:headerLayout="@layout/cabecera_drawel"
-        app:menu="@menu/menudrawing"/>
+        app:headerLayout="@layout/cabecera_drawel2"
+        app:menu="@menu/menudrawing2"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

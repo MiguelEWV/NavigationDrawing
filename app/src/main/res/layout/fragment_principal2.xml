@@ -3,26 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    android:layout_height="match_parent">
+<!-- Este fragment principal o base es creado caso fuese a trabajar con fragment
+-->
 
-    <!-- El tipo de layout tiene que
-     ser cambiado para constraint layout para  -->
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textview_layout_fragment_principal2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/item2k"
+        android:text="Fragment Principal Kotlin deve ser representado con el 2k"
         android:textAlignment="center"
-
-        android:textColor="@color/black"
-        android:textSize="70sp"
+        android:textSize="36sp"
         android:textStyle="bold"
-        android:background="#17BB86FC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

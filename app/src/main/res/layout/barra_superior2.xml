@@ -17,7 +17,7 @@ comandos hace que funcione-->
         android:theme="@style/Theme.NavigationDrawing">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/barrasuperior_layout_barra_superior"
+        android:id="@+id/barrasuperior_layout_barra_superior2"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,10 +30,10 @@ comandos hace que funcione-->
     </com.google.android.material.appbar.AppBarLayout>
 <!-- Se incluye el contenido principal para quando fuese mostrado
 la barra superior simpre con el contenido principal del layout-->
-    <include layout="@layout/contenido_principal" />
+    <include layout="@layout/contenido_principal2" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/boton_flotante_layout_barra_superior"
+        android:id="@+id/boton_flotante_layout_barra_superior2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"

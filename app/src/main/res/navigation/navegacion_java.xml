@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion_java_navigation_navegacion_java"
+    app:startDestination="@id/fragment2k">
+
+    <fragment
+        android:id="@+id/fragment2k"
+        android:name="com.miguelewv.navigationdrawing.fragment2k"
+        android:label="fragment_fragment2k"
+        tools:layout="@layout/fragment_fragment2k" />
+    <fragment
+        android:id="@+id/fragment4k"
+        android:name="com.miguelewv.navigationdrawing.fragment4k"
+        android:label="fragment4k"
+        tools:layout="@layout/fragment_fragment4k" />
+    <fragment
+        android:id="@+id/fragment8k"
+        android:name="com.miguelewv.navigationdrawing.fragment8k"
+        android:label="fragment8k"
+        tools:layout="@layout/fragment_fragment8k" />
+    <fragment
+        android:id="@+id/fragment10k"
+        android:name="com.miguelewv.navigationdrawing.fragment10k"
+        android:label="fragment10k"
+        tools:layout="@layout/fragment_fragment10k" />
+</navigation>

@@ -11,30 +11,30 @@
 
     <group >
     <item
-        android:id="@+id/k2"
+        android:id="@+id/k22"
         android:icon="@drawable/ic_baseline_2k_24"
-        android:title="Resolucion 2K"/>
+        android:title="Resolucion 2K Kotlin"/>
     <item
-        android:id="@+id/k4"
+        android:id="@+id/k42"
         android:icon="@drawable/ic_baseline_4k_24"
-        android:title="Resolucion 4K"/>
+        android:title="Resolucion 4K Kotlin"/>
     <item
-        android:id="@+id/k8"
+        android:id="@+id/k82"
         android:icon="@drawable/ic_baseline_8k_24"
-        android:title="Resolucion 8K"/>
+        android:title="Resolucion 8K Kotlin"/>
     <item
-        android:id="@+id/k10"
+        android:id="@+id/k102"
         android:icon="@drawable/ic_baseline_10k_24"
-        android:title="Resolucion 10K"/>
+        android:title="Resolucion 10K Kotlin"/>
     </group>
 
     <group android:checkableBehavior="single"
         android:menuCategory="container"
         >
         <item
-            android:id="@+id/g4"
+            android:id="@+id/g42"
             android:icon="@drawable/ic_baseline_4g_mobiledata_24"
-            android:title="Conexion 4G"/>
+            android:title="Conexion 4G Kotlin"/>
     </group>
 
 

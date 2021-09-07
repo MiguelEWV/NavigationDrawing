@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:id="@+id/Layout_Principal_activity_main"><!-- OJO
+
+    android:id="@+id/layout_principal_activity_main"
+    tools:openDrawer="start"><!-- OJO
     Acresento deste valor que es llamado dentro de
     la classe "MainActivity"  1-VIDEO JAVA
     todo>>
@@ -27,38 +28,39 @@
 -->
 <!-- todo>>      1-VIDEO JAVA -->
     <include
+        android:id="@+id/barra_superior_layout_activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         layout="@layout/barra_superior"
         />
 
     <!--Agregando el layout de el contenido principal OBLIGATORIO-->
-<!-- todo>>      1-VIDEO JAVA-->
+<!-- todo>>      1-VIDEO JAVA
     <include
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         layout="@layout/contenido_principal"
-        />
+        /> -->
 
 <!-- todo>>      1- VIDEO JAVA
     Agregando el Container/NavigationView
     * Dentro del container esta o layout de menu menudrawing
     * Dentro de container esta tambien el headerLayout
-    "cabecera_drawel"
+        "cabecera_drawel"
     * La opcion de layoutGravity es para alinear
-    el menu para la izquierda ocultando el mismo
+        el menu para la izquierda ocultando el mismo
     * la opcion de gravity puede ser cambiada para salir el menu
-    desde otro canto de pantalla
-    " start - desde izquierda "
-    " end - desde derecha "
+        desde otro canto de pantalla
+        " start - desde izquierda "
+        " end - desde derecha "
     * La opcion de altura o ancho puede ser modificada para
-    alteracion del tamano del menu el "layout_width y layout_height"
+        alteracion del tamano del menu el "layout_width y layout_height"
 -->
 <!-- todo>>   1-VIDEO JAVA -->
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/vistaDeNavegacion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/vistadenavegacion_layout_activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         app:menu="@menu/menudrawing"
         app:headerLayout="@layout/cabecera_drawel"
         android:layout_gravity="start"

@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:background="@drawable/degradado_fondo_menu"
-    android:gravity="center"
-    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:orientation="vertical"
     android:paddingLeft="5dp"
     android:paddingTop="5dp"
     android:paddingRight="5dp"
     android:paddingBottom="5dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 <!-- Desnecesaior si no se fuese a usar una estetica superior con la representacion de la aplicacion  -->
-    <TextView
-        android:id="@+id/textview_layout_cabecera_drawel"
-        android:layout_width="match_parent"
-        android:layout_height="28dp"
-        android:text="Menu Drawer"
-        android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/imageview_layout_cabecera_drawel"        app:layout_constraintVertical_bias="0.0" />
-
     <ImageView
-        android:id="@+id/imageview_layout_cabecera_drawel"
+        android:id="@+id/imageview_layout_cabecera_drawel2"
         android:layout_width="70dp"
         android:layout_height="60dp"
         android:outlineAmbientShadowColor="@color/purple_200"
         android:outlineSpotShadowColor="@color/teal_700"
-        app:layout_constraintEnd_toEndOf="@+id/textview_layout_cabecera_drawel"
+        app:layout_constraintEnd_toEndOf="@+id/textview_layout_cabecera_drawel2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline" />
 
+    <TextView
+        android:id="@+id/textview_layout_cabecera_drawel2"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="Menu Drawer Kotlin"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_layout_cabecera_drawel2"
+        app:layout_constraintVertical_bias="0.0" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

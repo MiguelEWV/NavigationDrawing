@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment2k">
+    tools:context=".fragment10k">
 
     <!-- El tipo de layout tiene que
      ser cambiado para constraint layout para  -->

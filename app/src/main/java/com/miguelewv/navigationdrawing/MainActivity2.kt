@@ -11,49 +11,51 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.graphics.drawable.DrawerArrowDrawable
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.FragmentContainerView
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.navigation.NavigationView
+import com.miguelewv.navigationdrawing.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity () {
 
 //====Palavra reservada 'lateinit' para declaracao das variaveis depois
 
-    lateinit var toogle: ActionBarDrawerToggle
-    val drawerKotlin = findViewById<DrawerLayout>(R.id.drawerKotlin)
-    //val visualKotlin = findViewById<>(R.id.visual_de_navegacion_kotlin)
+    private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var binding: ActivityMain2Binding
 
-    override fun onCreate(savedInstanceState: Bundle?){
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
+        binding = ActivityMain2Binding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+       // setSupportActionBar(binding.contenedorDeFragmentLayoutActivityMain2.toolbar)
+
+        val drawerLayout: DrawerLayout = binding.layoutPrincipalActivityMain2
+        val navView: NavigationView = binding.vistadenavegacionLayoutActivityMain2
+        val navController = findNavController(R.id.contenedor_layout_contenido_principal2)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.fragment2k2, R.id.fragment4k2, R.id.fragment8k2
+            ), drawerLayout
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
 
         //==================================================================================================
 
-        toogle = ActionBarDrawerToggle(this, drawerKotlin, R.string.open, R.string.close)
-        drawerKotlin.addDrawerListener(toogle)
-        toogle.syncState()
-
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        visualKotlin.setNavigationItemSelectedListener {
-            when(it.itemId){
-                R.id.k2 -> {supportFragmentManager.beginTransaction().apply { replace(R.id.contenedor_de_fragment_kotlin,fragment2k())}}
-            }
-            //otros aqui
-            //ocultar el drawerlayout despues de clicar en la opcion escojida
-            drawerKotlin.closeDrawer(GravityCompat.START)
-        true
-        }
-
 
     }
-//Icono del menu
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(toogle.onOptionsItemSelected(item)){
-            return true
-        }
-        return super.onOptionsItemSelected(item)
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.contenedor_layout_contenido_principal2)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
-
-
-
 
 }

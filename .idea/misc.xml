@@ -3,19 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/drawable/degradado_fondo_menu.xml" value="0.353125" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/activity_main2.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/barra_superior.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/barra_superior2.xml" value="0.3328125" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/barrasuperior.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/cabecera_drawel.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/cabecera_drawel2.xml" value="0.3328125" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/contenido_principal.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/contenido_principal2.xml" value="0.3328125" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/contenidoprincipal.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/fragment_fragment10k.xml" value="0.17604166666666668" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/fragment_fragment2k.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/fragment_fragment4k.xml" value="0.33" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/fragment_fragment8k.xml" value="0.17604166666666668" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/fragment_principal.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/layout/fragment_principal2.xml" value="0.3328125" />
         <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/menu/menudrawing.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/WELLS/Desktop/NavigationDrawing/app/src/main/res/menu/menudrawing2.xml" value="0.3328125" />
       </map>
     </option>
   </component>
