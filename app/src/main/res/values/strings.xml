@@ -13,5 +13,8 @@
     <string name="item4k">ITEM 4K</string>
     <string name="item8k">ITEM 8K</string>
     <string name="item10k">ITEM 10K</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">FRAGMENTO WEB</string>
+    <string name="boton_de_prueva_fuera_del_fragment">Boton de prueva fuera del Fragment</string>
 
 </resources>

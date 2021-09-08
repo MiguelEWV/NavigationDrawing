@@ -14,7 +14,7 @@
         todo>> la clase de java inicial es la MainActivity y la de Kotlin es MainActivity2-->
         <activity
             android:theme="@style/Theme.NavigationDrawing.NoActionbar"
-            android:name=".MainActivity2"
+            android:name=".nueva"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

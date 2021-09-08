@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:id="@+id/layout_principal_activity_main"
-    tools:openDrawer="start"><!-- OJO
+    tools:openDrawer="start"
+    ><!-- OJO
     Acresento deste valor que es llamado dentro de
     la classe "MainActivity"  1-VIDEO JAVA
     todo>>
@@ -31,7 +31,7 @@
         android:id="@+id/barra_superior_layout_activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        layout="@layout/barra_superior"
+        layout="@layout/fragment_miguel_fragment"
         />
 
     <!--Agregando el layout de el contenido principal OBLIGATORIO-->

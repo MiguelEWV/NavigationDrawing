@@ -3,12 +3,15 @@ package com.miguelewv.navigationdrawing;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -24,6 +27,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -31,50 +35,33 @@ import com.miguelewv.navigationdrawing.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMainBinding binding;
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.contenedor_layout_contenido_principal);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
+
+    //@SuppressWarnings("StatementWithEmptyBody")
+   // @Override
+    public boolean onNavigationItemSelected (MenuItem item){
+        int id = item.getItemId();
+        FragmentManager fm = getSupportFragmentManager(); //llamada del suporte del gestor de fragment
+        if (id == R.id.webmenu){
+            fm.beginTransaction().replace(R.id.escenario,new miguel_fragment()).commit();//opcion para hacer la transferencia
+        } else if (id == R.id.k2){
+            fm.beginTransaction().replace(R.id.escenario,new tania_fragment()).commit();
+        }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.layout_principal_activity_main);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-        //setSupportActionBar(binding.barraSuperiorLayoutActivityMain.toolbar);
-      //  binding.barraSuperiorLayoutActivityMain.fab.setOnClickListener(new View.OnClickListener() {
-         //   @Override
-          //  public void onClick(View view) {
-        //        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-        //                .setAction("Action", null).show();
-        //    }
-      //  });
-        DrawerLayout drawer = binding.layoutPrincipalActivityMain;
-        NavigationView navigationView = binding.vistadenavegacionLayoutActivityMain;
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.fragment2k, R.id.fragment4k, R.id.fragment8k)
-                .setOpenableLayout(drawer)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.contenedor_layout_contenido_principal);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
-    }
+        setContentView(R.layout.contenido_principal);
 
 
 
 
-    //==================Creacion de las variables internas de los layout============================
+
+        //==================Creacion de las variables internas de los layout============================
     //==========Advertencia el menu drawer funciona sin estas opciones =============================
    // DrawerLayout drawerLayout;
    // ActionBarDrawerToggle actionBarDrawerToggle;
@@ -109,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         actionBarDrawerToggle.syncState();                              */
 //==================================================================================================
 /*
-        Button button = findViewById(R.id.botonpruevafueradelfragment_layout_contenido_principal);
+        Button button = findViewById(R.id.botonprueva_layout_contenido_principal);
         button.setOnClickListener(v -> {
 
             Toast.makeText(MainActivity.this, "Boton de Prueva", Toast.LENGTH_SHORT).show();
@@ -126,4 +113,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//}
+}
